@@ -3,7 +3,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,11 +51,110 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+/*@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+*/
+@headerfont:'Fredoka One', cursive; 
+@pfont:'Bitter', serif;
+@phonefont:'Bangers', cursive;
+
 * {
     box-sizing: border-box;
 }
 
+
+nav{
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 4%;
+}
 html, body {
     height: 100%;
 }
+.top-section{
+	margin-bottom: 5%;
+	.box{
+		display: flex;
+		
+	}
+	img{
+		margin-left: 20%;
+		margin-bottom: 5%;
+		display: block;
+		max-width: 20%;
+		height: 5% 0;
+	}
+	.headers {
+		font-family:@headerfont;
+		font-size: 180%;
+		text-align: center;
+		margin-left: 5%;
+  }
+  h2{
+	  margin-top: 12%;
+  }
+  p{
+	  text-align: center;
+	  font-family: @pfont;
+	  font-size: 140%;
+	  margin-top: 5%;
+	  margin-bottom: 5%;
+  }
+}
 
+.skills{
+	border-top:2px solid black;
+	
+	h1{
+		font-family: @headerfont;
+		font-size: 180%;
+		text-align: center;
+		margin-top: 5%;
+		margin-bottom: 4%;
+	}
+}
+ul, li{
+	text-align: center;
+	justify-content: space-evenly;
+	font-family: @pfont;
+	font-size: 120%;
+}
+.work{
+	border-top: 2px solid black;
+	padding-top: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	h1{
+		font-family: @headerfont;
+		font-size: 190%;
+		text-align: center;
+		margin-bottom: 5%;		
+	}
+	.boxtwo a{
+	
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+ 
+footer {
+	border-top: 2px solid black;
+	h1{
+		text-align: center;
+		font-family: @headerfont;
+		font-size: 190%;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+	p{
+		font-family: @pfont;
+		font-size: 130%;
+		margin-bottom: 6%;
+	}
+}
+@media(max-width: 500px){
+	h1, h2{
+		background-color: green;
+		font-family: @phonefont;
+	}
+}
